@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="baitap1.calculator"
+             Title="Calculator - C#">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="kq" HeightRequest="250" FontSize="75" Text="ád" HorizontalTextAlignment="End" VerticalTextAlignment="End"  VerticalOptions="Center" TextColor="White" />
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button BorderRadius="10" x:Name="delete" Text="C" Grid.Row="0" Grid.Column="0" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name ="√" Text="√" Grid.Row="0" Grid.Column="1" Clicked="clicked_Number" BackgroundColor="White" />
+                <Button BorderRadius="10" x:Name="%" Text="%" Grid.Row="0" Grid.Column="2" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="DIV" Text="DIV" Grid.Row="0" Grid.Column="3" Clicked="clicked_Number" BackgroundColor="#FFC337" />
+                <Button BorderRadius="10" x:Name="7" Text="7" Grid.Row="1" Grid.Column="0" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="8" Text="8" Grid.Row="1" Grid.Column="1" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="9" Text="9" Grid.Row="1" Grid.Column="2" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="X" Text="X" Grid.Row="1" Grid.Column="3" Clicked="clicked_Number" BackgroundColor="#FFC337"/>
+                <Button BorderRadius="10" x:Name="4" Text="4" Grid.Row="2" Grid.Column="0" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="5" Text="5" Grid.Row="2" Grid.Column="1" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="6" Text="6" Grid.Row="2" Grid.Column="2" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="-" Text="-" Grid.Row="2" Grid.Column="3" Clicked="clicked_Number" BackgroundColor="#FFC337" />
+                <Button BorderRadius="10" x:Name="1" Text="1" Grid.Row="3" Grid.Column="0" Clicked="clicked_Number" BackgroundColor="White" />
+                <Button BorderRadius="10" x:Name="2" Text="2" Grid.Row="3" Grid.Column="1" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="3" Text="3" Grid.Row="3" Grid.Column="2" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="+" Text="+" Grid.Row="3" Grid.Column="3" Clicked="clicked_Number" BackgroundColor="#FFC337"/>
+                <Button BorderRadius="10" x:Name="0" Text="0" Grid.Row="4" Grid.ColumnSpan="2" Clicked="clicked_Number" Grid.Column="0" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="." Text="." Grid.Row="4" Grid.Column="2" Clicked="clicked_Number" BackgroundColor="White"/>
+                <Button BorderRadius="10" x:Name="=" Text="=" Grid.Row="4" Grid.Column="3" Clicked="clicked_Number" BackgroundColor="#FFC337"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

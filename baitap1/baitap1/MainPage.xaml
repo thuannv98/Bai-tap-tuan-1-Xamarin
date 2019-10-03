@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="baitap1.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button Text="Màn Hình Chào" Clicked="BtnMhc"></Button>
+        <Button Text="Màn hình tính tổng" Clicked="BtnMhtt"/>
+        <Button Text="StackLayout"/>
+        <Button Text="AbsoluteLayout"/>
+        <Button Text="GridLayout"/>
+        <Button Text="Calculator" Clicked="BtnMaytinh" />
+        <Button Text="Login" Clicked="BtnLogin" />
+    </StackLayout>
+
+</ContentPage>
